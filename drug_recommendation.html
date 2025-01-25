@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Me</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"> <img src="images/Blue and White Minimal Dental Care Logo (1).png"></a>
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="search here">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"> <img src="images/home.png" alt=""> <span>Home</span></a></i>
+                <li><a href="#"> <img src="images/network.png" alt=""> <span>Network</span></a></i>
+                <li><a href="drug.html"> <img src="images/jobs.png" alt=""> <span>Drug Recommendation</span></a></i>
+                <li><a href="#"> <img src="images/message.png" alt=""> <span>message</span></a></i>
+                <li><a href="#"> <img src="images/notification.png" alt=""> <span>Notification</span></a></i>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.png" alt="" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- ------------------------profile-drop-down-menu------------------- -->
+        <div class="profile-menu-warp" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png" alt="">
+                    <div>
+                        <h3>Abdelrahman Muhamed</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="">
+                    <p>Display & Accessibity</p>
+                    <span>></span>
+                </a>
+                <a href="sign-in.html" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+
+
+            </div>
+        </div>
+
+    </nav>
+    <div class="container">
+       
+        <!-- -------------main-sidebar---------- -->
+        <!-- ----------DRUG RECOMENDATION----- -->
+       
+<div class="main-sidebar " id="drug">
+    <div class="container-Drugs">
+        <div class="wrapper">
+            <form action="drug_recommendation.php" method="POST">
+                <div class="select-btn">
+                    <span>Select Systemic Drugs </span>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="content">
+                    <div class="search">
+                        <i class="uil uil-search"></i>
+                        <input spellcheck="false" type="text" name="drug_type" placeholder="Search" />
+                    </div>
+                    <ul class="options"></ul>
+                </div>
+                <!-- SELECT-disease drugs  -->
+                <div class="wrapper wrapperD">
+                    <div class="select-btn select-btn-D">
+                        <span>Select Disease</span>
+                        <i class="uil uil-angle-down"></i>
+                    </div>
+                    <div class="content">
+                        <div class="search">
+                            <i class="uil uil-search"></i>
+                            <input spellcheck="false" type="text" name="chronic_diseas" placeholder="Search" />
+                        </div>
+                        <ul class="options options-D"></ul>
+                    </div>
+                </div>
+                <button class="button-63 wrapper" role="button">Submit</button>
+            </form>
+            <div id="recommendation-output">
+                <!-- Output will be displayed here -->
+            </div>
+        </div>
+    </div>
+</div>
+                <!-- SELECT-disease drugs  -->
+                <div class="wrapper wrapperD">
+                    <div class="select-btn select-btn-D">
+                        <span>Select Disease</span>
+                        <i class="uil uil-angle-down"></i>
+                    </div>
+                    <div class="content">
+                        <div class="search">
+                            <i class="uil uil-search"></i>
+                            <input spellcheck="false" type="text" placeholder="Search" />
+                        </div>
+                        <ul class="options options-D"></ul>
+                    </div>
+                </div>
+                <button class="button-63 wrapper" role="button">Submit</button>
+            </div>
+        </div>
+
+        <!-- -------------right-sidebar---------- -->
+      
+    </div>
+
+
+    
+</body>
+
+</html>

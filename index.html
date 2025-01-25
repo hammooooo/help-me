@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Me</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"> <img src="images/Blue and White Minimal Dental Care Logo (1).png"></a>
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="search here">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html" class="active-link"> <img src="images/home.png" alt=""> <span>Home</span></a></i>
+                <li><a href="#"> <img src="images/network.png" alt=""> <span>Network</span></a></i>
+                <li><a href="finall-drug.php" > <img src="images/jobs.png" alt=""> <span>Drug Recommendation</span></a></i>
+                <li><a href="#"> <img src="images/message.png" alt=""> <span>message</span></a></i>
+                <li><a href="#"> <img src="images/notification.png" alt=""> <span>Notification</span></a></i>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.png" alt="" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- ------------------------profile-drop-down-menu------------------- -->
+        <div class="profile-menu-warp" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png" alt="">
+                    <div>
+                        <h3>Abdelrahman Muhamed</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="">
+                    <p>Display & Accessibity</p>
+                    <span>></span>
+                </a>
+                <a href="login.php" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+
+
+            </div>
+        </div>
+
+    </nav>
+    <div class="container">
+        <!-- -------------left-sidebar---------- -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/cover-pic.png" alt="" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="images/user-1.png" alt="">
+                    <h1>Abdelrahman Muhamed</h1>
+                    <h3>Dentist at shiny White Dental Center</h3>
+                    <ul>
+                        <li class="li-profile">Your profile views <span>52</span></li>
+                        <li class="li-profile">Your post views <span>2810</span></li>
+                        <li class="li-profile">Your connections <span>111</span></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sidebar-activity">
+                <h2>Library</h2>
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/recent.png" alt="">Mahmoud Al Ankily</a>
+                <a href="#"><img src="images/recent.png" alt="">Physiology by Doctor Nagi</a>
+                <a href="#"><img src="images/recent.png" alt="">Dr Ayman Khanfour Anatomy Teaching</a>
+                <a href="#"><img src="images/recent.png" alt="">Ezzat Shouman</a>
+                <a href="#"><img src="images/recent.png" alt="">Clinical Pharmacology Lectures</a>
+
+                <h3>GROUPS</h3>
+                <a href="#"><img src="images/group.png" alt="">Badly Decayed Dentists🦷</a>
+                <a href="#"><img src="images/group.png" alt="">we pretend we AREN'T dental students🦷</a>
+                <a href="#"><img src="images/group.png" alt="">Badly Decayed Dentists</a>
+
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/hashtag.png" alt="">Oral and Maxillofacial Pathology</a>
+                <a href="#"><img src="images/hashtag.png" alt="">Dental Public Health</a>
+                <a href="#"><img src="images/hashtag.png" alt="">Cosmetic Dentistry</a>
+                <a href="#"><img src="images/hashtag.png" alt="">Prosthodontics</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+
+            </div>
+        </div>
+        <!-- -------------main-sidebar---------- -->
+        <div class="main-sidebar " id="home">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/user-1.png" alt="">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/photo.png" alt="">Photo</li>
+                    <li><img src="images/video.png" alt="">Video</li>
+                    <li><img src="images/event.png" alt="">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>top <img src="images/down-arrow.png" alt=""></span></p>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png" alt="">
+                    <div>
+                        <h1>Esraa Hamam</h1>
+                        <small>Specialist of oral and cosmetic dentistry | Dentist</small>
+                        <small>2 hours ago</small>
+
+                    </div>
+
+                </div>
+                <p>The Importance of Dentistry
+                    Dentistry, the branch of medicine focused on oral health, has significantly evolved from ancient
+                    times. Today, it
+                    includes various specialties such as preventive, restorative, orthodontic, periodontic, endodontic,
+                    and pediatric
+                    dentistry.
+
+                    Key Aspects of Modern Dentistry
+                    Preventive Care: Regular check-ups and cleanings to maintain healthy teeth and gums.
+                    Restorative Treatments: Repairing damaged or decayed teeth with fillings, crowns, and implants.
+                    Orthodontics: Correcting misaligned teeth and jaws.
+                    Periodontics: Treating gum diseases.
+                    Endodontics: Addressing issues with dental pulp and root canals.
+                    Pediatric Dentistry: Specialized care for children's dental health.
+                    Technological Advancements
+                    Innovations like digital radiography, 3D imaging, and laser treatments have improved diagnosis and
+                    treatment, making
+                    procedures more efficient and less painful.
+
+                    Oral Health and Overall Well-being
+                    Good oral hygiene is crucial as it can prevent dental issues like cavities and gum disease, and is
+                    linked to overall
+                    health, impacting conditions such as heart disease and diabetes.
+
+                    Future of Dentistry
+                    Advances in regenerative dentistry and personalized treatments based on genetics hold promise for
+                    more effective and
+                    tailored dental care.
+
+                    In summary, dentistry plays a vital role in maintaining both oral and overall health, with ongoing
+                    advancements
+                    enhancing patient care and outcomes</p>
+                <img src="images/post2.jpeg" alt="" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-users"> Hamam and 239 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 30 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png" alt="">
+                    <div>
+                        <h1>Hamam Abdullah</h1>
+                        <small>General Dentistry| Dentist</small>
+                        <small>4 hours ago</small>
+
+                    </div>
+
+                </div>
+                <p>The Importance of Dentistry
+                    Dentistry, the branch of medicine focused on oral health, has significantly evolved from ancient
+                    times. Today, it
+                    includes various specialties such as preventive, restorative, orthodontic, periodontic, endodontic,
+                    and pediatric
+                    dentistry.</p>
+                <img src="images/post1.jpeg" alt="" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-users"> MU and 239 others</span>
+                    </div>
+                    <div>
+                        <span>40 comments &middot; 21 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-2.png" alt="" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png" alt="">
+                    <div>
+                        <h1>Ahmed Abdelnasser</h1>
+                        <small>Specialist Endodontics| Dentist</small>
+                        <small>4 hours ago</small>
+
+                    </div>
+
+                </div>
+                <p>Key Aspects of Modern Dentistry
+                    Preventive Care: Regular check-ups and cleanings to maintain healthy teeth and gums.
+                    Restorative Treatments: Repairing damaged or decayed teeth with fillings, crowns, and implants.
+                    Orthodontics: Correcting misaligned teeth and jaws.
+                    Periodontics: Treating gum diseases.</p>
+                <img src="images/post3.jpeg" alt="" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="liked-users"> Selwan and 239 others</span>
+                    </div>
+                    <div>
+                        <span>100 comments &middot; 30 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- -------------right-sidebar---------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" alt="" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">Digital Smile Design (DSD): Precision in Planning </a>
+                <span>
+                    5hr ago &middot; 10,987 readers
+                </span>
+
+                <a href="#">Teledentistry: Convenient Consultations </a>
+                <span>
+                    12h ago &middot; 30,000 readers
+                </span>
+
+                <a href="#">Non-Invasive Smile Enhancements: Minimal Downtime, Maximum Impact </a>
+                <span>
+                    1d ago &middot; 7,889 readers
+                </span>
+
+                <a href="#">Biocompatible and Natural-Looking Materials: Aesthetic Excellence </a>
+                <span>
+                    2d ago &middot; 10,987 readers
+                </span>
+
+                <a href="#">Orthodontic Innovations: Discreet and Efficient Alignment </a>
+                <span>
+                    3d ago &middot; 12,787 readers
+                </span>
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+            <div class="sidebar-ad">
+                <small>Ads..</small>
+                <p>Your best Advertise</p>
+                <div>
+                    <img src="images/ad3.jpeg" alt="">
+                    <img src="images/ad2.jpeg" alt="">
+                    <img src="images/ad1.jpeg" alt="">
+                </div>
+                <b>brands you can trust</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#"> About</a>
+                <a href="#"> Accessibity</a>
+                <a href="#"> Help Center</a>
+                <a href="#"> Privacy Policy</a>
+                <a href="#"> Advertising</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="images/Blue and White Minimal Dental Care Logo (1).png" alt="">
+                    <p>Medhat's Team &#169; 2024. All right reserved </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <script src="drug.js"></script>
+</body>
+
+</html>
